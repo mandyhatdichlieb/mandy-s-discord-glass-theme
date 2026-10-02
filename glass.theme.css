@@ -1,0 +1,75 @@
+/**
+ * @name glass theme
+ * @author mandy
+ * @version 1.0
+ * @description ig: splattedmandy
+ */
+
+:root,
+.theme-dark,
+.theme-light,
+[class*="theme-"] {
+  --background-primary: transparent !important;
+  --background-secondary: transparent !important;
+  --background-secondary-alt: transparent !important;
+  --background-tertiary: transparent !important;
+  --background-accent: transparent !important;
+  --background-floating: transparent !important;
+  --bg-base-primary: transparent !important;
+  --bg-base-secondary: transparent !important;
+  --bg-base-tertiary: transparent !important;
+  --bg-surface-overlay: transparent !important;
+  --bg-surface-raised: transparent !important;
+  --channeltextarea-background: transparent !important;
+}
+
+html,
+body,
+#app-mount,
+#app-mount * {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+#app-mount::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55) !important;
+  pointer-events: none;
+  z-index: -1;
+}
+[class*="sidebar_"],
+[class*="chat_"],
+[class*="pageWrapper_"],
+[class*="peopleColumn_"],
+[class*="nowPlayingColumn_"],
+[class*="members_"] {
+  background: rgba(0, 0, 0, 0.45) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-radius: 20px !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4) !important;
+}
+
+[class*="sidebar_"] { margin: 10px 4px 10px 10px !important; }
+[class*="chat_"], [class*="pageWrapper_"] { margin: 10px 4px !important; }
+[class*="nowPlayingColumn_"], [class*="members_"] { margin: 10px 10px 10px 4px !important; }
+
+#app-mount h1,
+#app-mount h2,
+#app-mount h3,
+#app-mount span,
+#app-mount p,
+#app-mount a,
+#app-mount label {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9), 0 0 5px rgba(0, 0, 0, 0.9) !important;
+}
+
+[class*="channelTextArea_"],
+[class*="scrollableContainer_"] {
+  background: rgba(0, 0, 0, 0.5) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 16px !important;
+}
