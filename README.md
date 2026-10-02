@@ -3,4 +3,5 @@ I could not find a good transparent theme on discord so i made one myself. I won
 Vencord or BetterDiscord needed 
 - https://betterdiscord.app/
 - https://vencord.dev/
+
 Also enable window transparency!
